@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+   --cor-fundo: #212121;
+   --cor-fonte: #FFFFFF;
+   --cor-destaque: #22D4FD;
+   --fonte-padrao: 'Montserrat', san-serif;
+}
+
+html, body {
+    background-color: var(--cor-fundo);
+}
+
+body {
+    border: 1px solid var(--cor-destaque);
+    border-radius: 15px;
+    margin: 30px;
+    font-family: var(--fonte-padrao);
+    padding-bottom: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+#id-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.header_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header_icons_icons {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icone_inicial {
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+    margin: 50px 100px 0px 100px;
+}
+
+.container {
+    color: var(--cor-fonte);
+    font-size: 1em;
+    width: 75%;
+    line-height: 1.5;
+}
+
+.container_1 {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    position: relative;
+}
+
+.container_1::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: var(--cor-destaque);
+    margin-left: -20px;
+}
+
+h2 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    color: var(--cor-fonte);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--cor-destaque);
+    font-weight: 600;
+}
+
+.projetos_links {
+    text-decoration: none;
+    color: var(--cor-fonte);
+    position: relative;
+}
+
+.projetos_links::before {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: var(--cor-destaque);
+    position: absolute;
+    bottom: -2px;
+}
+
+.projetos_links:hover::before {
+    width: 100%;
+    transition: width .5s ease;
+}
+
+ul {
+    list-style-type: disc;
+    color: var(--cor-destaque);
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+.container li span {
+    color: var(--cor-fonte);
+}
